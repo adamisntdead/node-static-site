@@ -4,5 +4,8 @@
   "baseurl": "",
 
   "public": "public",
-  "static": "assets"
+  "static": "assets",
+  "plugins": [
+    "bold"
+  ]
 }

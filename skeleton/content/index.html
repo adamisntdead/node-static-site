@@ -8,7 +8,7 @@ permalink: '/'
     <ul>
       {{#each site.pages}}
       <li>
-	    <a href="{{ permalink }}">{{ title }}</a>
+	    <a href="{{ permalink }}">{{#bold}}{{ title }}{{/bold}}</a>
       </li>
       {{/each}}
     </ul>

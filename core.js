@@ -19,11 +19,25 @@ class Site {
 
     await this.reset()
     await this.read()
+    await this.plugins()
     await this.render()
     await this.write()
 
     console.timeEnd('Build Time')
   }
+
+    // Handle the plugins
+    async plugins() {
+      if (!this.config.plugins) return
+
+      // Small helper function to get the path to a function
+      const pluginPath = plugin => path.join(process.cwd(), 'plugins', plugin)
+  
+      this.config.plugins
+        .map(plugin => path.resolve(__dirname, pluginPath(plugin)))
+        .forEach(pluginPath => require(pluginPath)(Handlebars))
+    }
+  
 
   // Resets the public directory to empty
   async reset() {
