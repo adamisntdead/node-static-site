@@ -39,7 +39,7 @@ class Site {
     }
 
     // I want to find any partials, and if so, I want to add them to handlebars
-    // I like to keep partails out of my layouts folder, but of course this can be changed depending 
+    // I like to keep partials out of my layouts folder, but of course this can be changed depending 
     // on what workflow you want to use
     const partials = await glob('**/*.hbs', { cwd: 'partials' })
     for (let i = 0; i < partials.length; i++) {
