@@ -39,7 +39,7 @@ class Site {
     }
 
     // I want to find any partials, and if so, I want to add them to handlebars
-    // I like to keep partials out of my layouts folder, but of course this can be changed depending 
+    // I like to keep partials out of my layouts folder, but of course this can be changed depending
     // on what workflow you want to use
     const partials = await glob('**/*.hbs', { cwd: 'partials' })
     for (let i = 0; i < partials.length; i++) {
@@ -119,7 +119,11 @@ class Site {
 
       // Outputs are objects with 2 keys, the output path and the file contents
       this.output.push({
-        path: path.join(this.config.public, this.pages[i].permalink, 'index.html'),
+        path: path.join(
+          this.config.public,
+          this.pages[i].permalink,
+          'index.html'
+        ),
         content: renderedContent
       })
     }
@@ -131,7 +135,7 @@ class Site {
     const outputs = []
 
     for (let i = 0; i < this.output.length; i++) {
-      // Note here that the fs-extra `outputFile` method is being used. This means that we don't have to worry about 
+      // Note here that the fs-extra `outputFile` method is being used. This means that we don't have to worry about
       // creating the directory
       outputs.push(fs.outputFile(this.output[i].path, this.output[i].content))
     }

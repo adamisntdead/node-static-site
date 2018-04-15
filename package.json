@@ -1,11 +1,16 @@
 {
-  "name": "generator",
+  "name": "station-generator",
+  "preferGlobal": true,
+  "bin": {
+    "station": "./cli.js"
+  },
   "version": "1.0.0",
   "description": "Static Site Generator In Node",
   "main": "app.js",
   "author": "Adam Kelly",
   "license": "MIT",
   "dependencies": {
+    "commander": "^2.15.1",
     "fast-glob": "^2.2.0",
     "fs-extra": "^5.0.0",
     "gray-matter": "^4.0.1",
