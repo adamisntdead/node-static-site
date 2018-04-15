@@ -1,0 +1,8 @@
+{
+  "title": "Your Awesome title",
+  "description": "Write an awesome description here! This will appear in the meta data",
+  "baseurl": "",
+
+  "public": "public",
+  "static": "assets"
+}

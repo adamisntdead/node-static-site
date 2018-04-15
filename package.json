@@ -1,0 +1,15 @@
+{
+  "name": "generator",
+  "version": "1.0.0",
+  "description": "Static Site Generator In Node",
+  "main": "app.js",
+  "author": "Adam Kelly",
+  "license": "MIT",
+  "dependencies": {
+    "fast-glob": "^2.2.0",
+    "fs-extra": "^5.0.0",
+    "gray-matter": "^4.0.1",
+    "handlebars": "^4.0.11",
+    "slug": "^0.9.1"
+  }
+}
