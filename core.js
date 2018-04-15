@@ -38,6 +38,15 @@ class Site {
       await fs.copy(this.config.static, this.config.public)
     }
 
+    // I want to find any partials, and if so, I want to add them to handlebars
+    // I like to keep partails out of my layouts folder, but of course this can be changed depending 
+    // on what workflow you want to use
+    const partials = await glob('**/*.hbs', { cwd: 'partials' })
+    for (let i = 0; i < partials.length; i++) {
+      const fileContent = await fs.readFile(`partials/${partials[i]}`, 'utf8')
+      Handlebars.registerPartial(partials[i].replace('.hbs', ''), fileContent)
+    }
+
     const files = await glob('**/*', { cwd: 'content' })
     // For each file, build up a page object, and add it to the pages list
     for (let i = 0; i < files.length; i++) {
