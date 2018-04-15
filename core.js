@@ -4,6 +4,7 @@ const glob = require('fast-glob')
 const matter = require('gray-matter')
 const slug = require('slug')
 const path = require('path')
+const marked = require('marked')
 
 class Site {
   constructor(config) {
@@ -86,6 +87,11 @@ class Site {
         site: { pages: this.pages, ...this.config },
         page: this.pages[i]
       })
+
+      // If markdown is true, then we want to render the file as markdown
+      if (this.pages[i].markdown) {
+        renderedContent = marked(renderedContent)
+      }
 
       // Rendering the layout, and then passing in the rendered content
       if (this.pages[i].layout) {
