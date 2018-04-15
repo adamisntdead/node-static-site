@@ -7,9 +7,8 @@ const Site = require('./core')
 
 const version = require('./package.json').version
 
-program
-  .version(version)
-  
+program.version(version)
+
 // Build the site
 program
   .command('build')
