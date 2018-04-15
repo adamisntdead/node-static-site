@@ -1,11 +1,8 @@
 ---
 title: Hello World pt. 1
 markdown: true
-permalink: '/'
-layout: default
+permalink: '/hello/'
+layout: post
 ---
-# Hello World!
 
 Hello from this simple static site generator named {{site.title}}
-
-{{> hi}}

@@ -1,0 +1,17 @@
+---
+permalink: '/'
+---
+
+{{> header}}
+<div class="content">
+  <div class="related">
+    <ul>
+      {{#each site.pages}}
+      <li>
+	    <a href="{{ permalink }}">{{ title }}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+{{> footer}}
