@@ -6,7 +6,6 @@
   "public": "public",
   "static": "assets",
   "plugins": [
-    "bold",
-    "amp"
+    "bold"
   ]
 }

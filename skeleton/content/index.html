@@ -1,17 +1,13 @@
 ---
 permalink: '/'
+layout: default
 ---
 
-{{> header}}
-<div class="content">
-  <div class="related">
-    <ul>
-      {{#each site.pages}}
-      <li>
-	    <a href="{{ permalink }}">{{#bold}}{{ title }}{{/bold}}</a>
-      </li>
-      {{/each}}
-    </ul>
-  </div>
-</div>
-{{> footer}}
+{{#each site.pages}}
+{{#if post}}
+  <article class="post">
+    <h1><a href="/{{permalink}}">{{title}}</a></h1>
+    {{summary}}
+  </article>  
+{{/if}}
+{{/each}}
