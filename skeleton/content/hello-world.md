@@ -1,8 +1,8 @@
 ---
-title: Hello World pt. 1
+title: Hello World!
 markdown: true
 permalink: '/hello/'
-layout: post
+layout: post-amp
 ---
 
 Hello from this simple static site generator named {{site.title}}
