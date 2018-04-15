@@ -1,7 +1,25 @@
-# Generator
+# Construct
 
-The generator is based on the main pipeline:
+> A Simple Static Site Generator Written In Node
 
-1. Reset - Resets the public folder
-2. Read - Reads all of the layout files ect.
-3. 
+## Usage
+
+Install the cli:
+
+```bash
+$ npm install -g construct-cli
+```
+
+Create a new folder, and create a new site inside of it
+
+```bash
+$ mkdir site
+$ cd site
+$ construct new
+```
+
+Build the site
+
+```bash
+$ construct build
+```

@@ -1,8 +1,8 @@
 {
-  "name": "station-generator",
+  "name": "construct-cli",
   "preferGlobal": true,
   "bin": {
-    "station": "./cli.js"
+    "construct": "./cli.js"
   },
   "version": "1.0.0",
   "description": "Static Site Generator In Node",
