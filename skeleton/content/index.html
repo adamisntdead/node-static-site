@@ -1,13 +1,27 @@
----
-permalink: '/'
-layout: default
+--- 
+permalink: '' 
+layout: default 
+title: Home 
+description: A Site Built With Static Goodness 
+nav: true
 ---
 
-{{#each site.pages}}
-{{#if post}}
-  <article class="post">
-    <h1><a href="/{{permalink}}">{{title}}</a></h1>
-    {{summary}}
-  </article>  
-{{/if}}
-{{/each}}
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      {{#each site.pages}} {{#if post}}
+      <div class="post-preview">
+        <a href="/{{permalink}}">
+          <h2 class="post-title">
+            {{title}}
+          </h2>
+          <h3 class="post-subtitle">
+            {{description}}
+          </h3>
+        </a>
+      </div>
+      {{/if}} {{/each}}
+    </div>
+  </div>
+</div>

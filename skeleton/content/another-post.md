@@ -1,9 +1,9 @@
 ---
 title: Another Post
 markdown: true
-layout: post
+layout: post 
 post: true
-summary: In this post, I will demonstrate markdown syntax that is supported, and show what it looks like in this default generator!
+description: In this post, I will demonstrate markdown syntax that is supported, and show what it looks like in this default generator!
 ---
 
 Here is another post! Here I will demonstrate more markdown syntax!

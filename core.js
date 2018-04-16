@@ -80,7 +80,7 @@ class Site {
       // Figure out the url
       const permalink = frontmatter.data.permalink
         ? frontmatter.data.permalink
-        : slug(title)
+        : slug(title).toLowerCase()
 
       // Add the page to the pages object
       this.pages.push({

@@ -3,7 +3,7 @@ title: Hello World!
 markdown: true
 layout: post
 post: true
-summary: A Small `Hello World` post! 
+description: A Small `Hello World` post! 
 ---
 
 Hello from this simple static site generator!
