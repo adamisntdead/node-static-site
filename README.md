@@ -8,8 +8,6 @@ Lastly, I will discuss the current state of the JAM stack, and when you should t
 
 **Rough Talk Duration:** 30-40 minutes
 
-**Generator Source Code:** [here](https://github.com/adamisntdead/construct)
-
 ## Generator
 
 ### Usage
