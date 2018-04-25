@@ -8,6 +8,7 @@ Lastly, I will discuss the current state of the JAM stack, and when you should t
 
 **Rough Talk Duration:** 30-40 minutes
 
+**Slides:** Available on [slides.com](https://slides.com/adamkelly-2/deck/#/)
 ## Generator
 
 ### Usage
